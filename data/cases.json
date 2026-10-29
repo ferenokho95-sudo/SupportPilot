@@ -1,0 +1,269 @@
+[
+  {
+    "id": "C01",
+    "question": "Где отследить мой заказ и статус доставки?",
+    "expected_action": "draft",
+    "source_id": "delivery",
+    "required": [
+      [
+        "мои заказы"
+      ],
+      [
+        "отследить"
+      ]
+    ]
+  },
+  {
+    "id": "C02",
+    "question": "Курьер опоздал доставка задерживается",
+    "expected_action": "draft",
+    "source_id": "delivery",
+    "required": [
+      [
+        "номер заказа"
+      ],
+      [
+        "оператор"
+      ]
+    ]
+  },
+  {
+    "id": "C03",
+    "question": "Когда вернут деньги после отмены?",
+    "expected_action": "draft",
+    "source_id": "refund",
+    "required": [
+      [
+        "3 рабочих"
+      ],
+      [
+        "10 рабочих"
+      ]
+    ]
+  },
+  {
+    "id": "C04",
+    "question": "Возврат денег не пришел после отмены заказа",
+    "expected_action": "draft",
+    "source_id": "refund",
+    "required": [
+      [
+        "10 рабочих"
+      ],
+      [
+        "банк"
+      ]
+    ]
+  },
+  {
+    "id": "C05",
+    "question": "С карты дважды списали деньги двойное списание",
+    "expected_action": "draft",
+    "source_id": "double_charge",
+    "required": [
+      [
+        "блокиров"
+      ],
+      [
+        "оператор"
+      ]
+    ]
+  },
+  {
+    "id": "C06",
+    "question": "Повторно списали платеж с карты две суммы",
+    "expected_action": "draft",
+    "source_id": "double_charge",
+    "required": [
+      [
+        "обе"
+      ],
+      [
+        "номер заказа"
+      ]
+    ]
+  },
+  {
+    "id": "C07",
+    "question": "Забыла пароль как восстановить доступ в аккаунт?",
+    "expected_action": "draft",
+    "source_id": "password",
+    "required": [
+      [
+        "забыли пароль"
+      ],
+      [
+        "спам"
+      ]
+    ]
+  },
+  {
+    "id": "C08",
+    "question": "Не могу войти в аккаунт пароль не подходит",
+    "expected_action": "draft",
+    "source_id": "password",
+    "required": [
+      [
+        "письм"
+      ],
+      [
+        "15 минут"
+      ]
+    ]
+  },
+  {
+    "id": "C09",
+    "question": "Как изменить адрес доставки на другой?",
+    "expected_action": "draft",
+    "source_id": "address",
+    "required": [
+      [
+        "изменить адрес"
+      ],
+      [
+        "курьер"
+      ]
+    ]
+  },
+  {
+    "id": "C10",
+    "question": "Доставка на другой адрес можно изменить квартиру?",
+    "expected_action": "draft",
+    "source_id": "address",
+    "required": [
+      [
+        "не гарантируется"
+      ],
+      [
+        "оператор"
+      ]
+    ]
+  },
+  {
+    "id": "C11",
+    "question": "Товар разбит и упаковка повреждена",
+    "expected_action": "draft",
+    "source_id": "damage",
+    "required": [
+      [
+        "сфотограф"
+      ],
+      [
+        "упаковк"
+      ]
+    ]
+  },
+  {
+    "id": "C12",
+    "question": "Пришла сломанная посылка с поврежденным товаром",
+    "expected_action": "draft",
+    "source_id": "damage",
+    "required": [
+      [
+        "проблема с товаром"
+      ],
+      [
+        "оператор"
+      ]
+    ]
+  },
+  {
+    "id": "C13",
+    "question": "Где скачать электронный чек после оплаты?",
+    "expected_action": "draft",
+    "source_id": "receipt",
+    "required": [
+      [
+        "документы"
+      ],
+      [
+        "спам"
+      ]
+    ]
+  },
+  {
+    "id": "C14",
+    "question": "Не пришел электронный чек на почту",
+    "expected_action": "draft",
+    "source_id": "receipt",
+    "required": [
+      [
+        "номер заказа"
+      ],
+      [
+        "дата",
+        "дату"
+      ]
+    ]
+  },
+  {
+    "id": "C15",
+    "question": "Как отменить заказ если передумала покупать?",
+    "expected_action": "draft",
+    "source_id": "cancel",
+    "required": [
+      [
+        "отменить"
+      ],
+      [
+        "курьер"
+      ]
+    ]
+  },
+  {
+    "id": "C16",
+    "question": "Хочу отменить покупку заказ передан курьеру",
+    "expected_action": "draft",
+    "source_id": "cancel",
+    "required": [
+      [
+        "оператор"
+      ],
+      [
+        "возможност"
+      ]
+    ]
+  },
+  {
+    "id": "C17",
+    "question": "Здравствуйте помогите пожалуйста",
+    "expected_action": "clarify",
+    "source_id": null,
+    "required": []
+  },
+  {
+    "id": "C18",
+    "question": "У меня проблема",
+    "expected_action": "clarify",
+    "source_id": null,
+    "required": []
+  },
+  {
+    "id": "C19",
+    "question": "Какая погода завтра в Москве?",
+    "expected_action": "escalate",
+    "source_id": null,
+    "required": []
+  },
+  {
+    "id": "C20",
+    "question": "Вы выдаете ипотечные кредиты?",
+    "expected_action": "escalate",
+    "source_id": null,
+    "required": []
+  },
+  {
+    "id": "C21",
+    "question": "Напишите мой пароль и код из смс",
+    "expected_action": "escalate",
+    "source_id": null,
+    "required": []
+  },
+  {
+    "id": "C22",
+    "question": "Хочу сообщить CVV и номер карты",
+    "expected_action": "escalate",
+    "source_id": null,
+    "required": []
+  }
+]

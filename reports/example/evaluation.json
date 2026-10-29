@@ -1,0 +1,591 @@
+{
+  "source": "22 синтетических обращения, локальный режим. Добровольцы и клиенты не участвовали.",
+  "count": 22,
+  "proxy_pass_rate": 1.0,
+  "action_accuracy": 1.0,
+  "avg_latency_ms": 0.3160909090909091,
+  "cost_usd": 0.0,
+  "quality_note": "proxy_pass = правильное действие + ожидаемая статья + все группы ключевых слов. Это не экспертная оценка смысла ответа.",
+  "results": [
+    {
+      "case_id": "C01",
+      "question": "Где отследить мой заказ и статус доставки?",
+      "expected_action": "draft",
+      "result": {
+        "question": "Где отследить мой заказ и статус доставки?",
+        "action": "draft",
+        "text": "Статус доставки доступен в разделе «Мои заказы» → «Отследить». Если обещанный интервал истёк, передайте номер заказа оператору: он проверит перевозчика. Не обещайте новую дату до подтверждения перевозчиком.\n\nИсточник: [delivery] Статус и задержка доставки",
+        "sources": [
+          {
+            "id": "delivery",
+            "title": "Статус и задержка доставки",
+            "score": 0.402543
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 1.738,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C02",
+      "question": "Курьер опоздал доставка задерживается",
+      "expected_action": "draft",
+      "result": {
+        "question": "Курьер опоздал доставка задерживается",
+        "action": "draft",
+        "text": "Статус доставки доступен в разделе «Мои заказы» → «Отследить». Если обещанный интервал истёк, передайте номер заказа оператору: он проверит перевозчика. Не обещайте новую дату до подтверждения перевозчиком.\n\nИсточник: [delivery] Статус и задержка доставки",
+        "sources": [
+          {
+            "id": "delivery",
+            "title": "Статус и задержка доставки",
+            "score": 0.359091
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.469,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C03",
+      "question": "Когда вернут деньги после отмены?",
+      "expected_action": "draft",
+      "result": {
+        "question": "Когда вернут деньги после отмены?",
+        "action": "draft",
+        "text": "После подтверждённой отмены магазин отправляет возврат в течение 3 рабочих дней. Зачисление зависит от банка и обычно занимает до 10 рабочих дней. Если прошло больше 10 рабочих дней после отправки возврата, передайте оператору номер заказа и дату отмены. Не запрашивайте полные реквизиты карты.\n\nИсточник: [refund] Возврат денег после отмены",
+        "sources": [
+          {
+            "id": "refund",
+            "title": "Возврат денег после отмены",
+            "score": 0.317424
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.283,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C04",
+      "question": "Возврат денег не пришел после отмены заказа",
+      "expected_action": "draft",
+      "result": {
+        "question": "Возврат денег не пришел после отмены заказа",
+        "action": "draft",
+        "text": "После подтверждённой отмены магазин отправляет возврат в течение 3 рабочих дней. Зачисление зависит от банка и обычно занимает до 10 рабочих дней. Если прошло больше 10 рабочих дней после отправки возврата, передайте оператору номер заказа и дату отмены. Не запрашивайте полные реквизиты карты.\n\nИсточник: [refund] Возврат денег после отмены",
+        "sources": [
+          {
+            "id": "refund",
+            "title": "Возврат денег после отмены",
+            "score": 0.39255
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.362,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C05",
+      "question": "С карты дважды списали деньги двойное списание",
+      "expected_action": "draft",
+      "result": {
+        "question": "С карты дважды списали деньги двойное списание",
+        "action": "draft",
+        "text": "Попросите проверить в банковском приложении, завершены ли обе операции: одна может быть временной блокировкой. Если обе суммы списаны окончательно, передайте оператору номер заказа и время операций. Не обещайте автоматический возврат без проверки.\n\nИсточник: [double_charge] Двойное списание",
+        "sources": [
+          {
+            "id": "double_charge",
+            "title": "Двойное списание",
+            "score": 0.377052
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.426,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C06",
+      "question": "Повторно списали платеж с карты две суммы",
+      "expected_action": "draft",
+      "result": {
+        "question": "Повторно списали платеж с карты две суммы",
+        "action": "draft",
+        "text": "Попросите проверить в банковском приложении, завершены ли обе операции: одна может быть временной блокировкой. Если обе суммы списаны окончательно, передайте оператору номер заказа и время операций. Не обещайте автоматический возврат без проверки.\n\nИсточник: [double_charge] Двойное списание",
+        "sources": [
+          {
+            "id": "double_charge",
+            "title": "Двойное списание",
+            "score": 0.366302
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.208,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C07",
+      "question": "Забыла пароль как восстановить доступ в аккаунт?",
+      "expected_action": "draft",
+      "result": {
+        "question": "Забыла пароль как восстановить доступ в аккаунт?",
+        "action": "draft",
+        "text": "На странице входа нажмите «Забыли пароль», укажите почту аккаунта и откройте письмо со ссылкой восстановления. Проверьте папку «Спам». Если письма нет 15 минут, передайте оператору адрес почты без пароля. Никогда не запрашивайте пароль или одноразовый код.\n\nИсточник: [password] Восстановление доступа",
+        "sources": [
+          {
+            "id": "password",
+            "title": "Восстановление доступа",
+            "score": 0.507934
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.241,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C08",
+      "question": "Не могу войти в аккаунт пароль не подходит",
+      "expected_action": "draft",
+      "result": {
+        "question": "Не могу войти в аккаунт пароль не подходит",
+        "action": "draft",
+        "text": "На странице входа нажмите «Забыли пароль», укажите почту аккаунта и откройте письмо со ссылкой восстановления. Проверьте папку «Спам». Если письма нет 15 минут, передайте оператору адрес почты без пароля. Никогда не запрашивайте пароль или одноразовый код.\n\nИсточник: [password] Восстановление доступа",
+        "sources": [
+          {
+            "id": "password",
+            "title": "Восстановление доступа",
+            "score": 0.336648
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.334,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C09",
+      "question": "Как изменить адрес доставки на другой?",
+      "expected_action": "draft",
+      "result": {
+        "question": "Как изменить адрес доставки на другой?",
+        "action": "draft",
+        "text": "Адрес можно изменить в разделе «Мои заказы» → «Изменить адрес», пока заказ не передан курьеру. После передачи курьеру изменение согласует оператор с перевозчиком; возможность изменения не гарантируется.\n\nИсточник: [address] Изменение адреса доставки",
+        "sources": [
+          {
+            "id": "address",
+            "title": "Изменение адреса доставки",
+            "score": 0.502407
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.223,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C10",
+      "question": "Доставка на другой адрес можно изменить квартиру?",
+      "expected_action": "draft",
+      "result": {
+        "question": "Доставка на другой адрес можно изменить квартиру?",
+        "action": "draft",
+        "text": "Адрес можно изменить в разделе «Мои заказы» → «Изменить адрес», пока заказ не передан курьеру. После передачи курьеру изменение согласует оператор с перевозчиком; возможность изменения не гарантируется.\n\nИсточник: [address] Изменение адреса доставки",
+        "sources": [
+          {
+            "id": "address",
+            "title": "Изменение адреса доставки",
+            "score": 0.509359
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.553,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C11",
+      "question": "Товар разбит и упаковка повреждена",
+      "expected_action": "draft",
+      "result": {
+        "question": "Товар разбит и упаковка повреждена",
+        "action": "draft",
+        "text": "Сохраните товар и упаковку, сфотографируйте повреждения и создайте обращение в разделе «Мои заказы» → «Проблема с товаром». Оператор проверит обращение и предложит доступный способ возврата или замены. Не обещайте компенсацию до рассмотрения.\n\nИсточник: [damage] Повреждённый товар",
+        "sources": [
+          {
+            "id": "damage",
+            "title": "Повреждённый товар",
+            "score": 0.481826
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.323,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C12",
+      "question": "Пришла сломанная посылка с поврежденным товаром",
+      "expected_action": "draft",
+      "result": {
+        "question": "Пришла сломанная посылка с поврежденным товаром",
+        "action": "draft",
+        "text": "Сохраните товар и упаковку, сфотографируйте повреждения и создайте обращение в разделе «Мои заказы» → «Проблема с товаром». Оператор проверит обращение и предложит доступный способ возврата или замены. Не обещайте компенсацию до рассмотрения.\n\nИсточник: [damage] Повреждённый товар",
+        "sources": [
+          {
+            "id": "damage",
+            "title": "Повреждённый товар",
+            "score": 0.405979
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.227,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C13",
+      "question": "Где скачать электронный чек после оплаты?",
+      "expected_action": "draft",
+      "result": {
+        "question": "Где скачать электронный чек после оплаты?",
+        "action": "draft",
+        "text": "Электронный чек доступен в карточке оплаченного заказа в разделе «Документы». Также проверьте почту аккаунта и папку «Спам». Если документа нет, передайте оператору номер заказа и дату оплаты.\n\nИсточник: [receipt] Электронный чек",
+        "sources": [
+          {
+            "id": "receipt",
+            "title": "Электронный чек",
+            "score": 0.530917
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.246,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C14",
+      "question": "Не пришел электронный чек на почту",
+      "expected_action": "draft",
+      "result": {
+        "question": "Не пришел электронный чек на почту",
+        "action": "draft",
+        "text": "Электронный чек доступен в карточке оплаченного заказа в разделе «Документы». Также проверьте почту аккаунта и папку «Спам». Если документа нет, передайте оператору номер заказа и дату оплаты.\n\nИсточник: [receipt] Электронный чек",
+        "sources": [
+          {
+            "id": "receipt",
+            "title": "Электронный чек",
+            "score": 0.486392
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.215,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C15",
+      "question": "Как отменить заказ если передумала покупать?",
+      "expected_action": "draft",
+      "result": {
+        "question": "Как отменить заказ если передумала покупать?",
+        "action": "draft",
+        "text": "Откройте «Мои заказы» и нажмите «Отменить», если кнопка доступна. Если заказ уже передан курьеру и кнопки нет, обратитесь к оператору для проверки возможности отмены. Условия возврата денег описаны в статье refund.\n\nИсточник: [cancel] Отмена заказа",
+        "sources": [
+          {
+            "id": "cancel",
+            "title": "Отмена заказа",
+            "score": 0.393945
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.216,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C16",
+      "question": "Хочу отменить покупку заказ передан курьеру",
+      "expected_action": "draft",
+      "result": {
+        "question": "Хочу отменить покупку заказ передан курьеру",
+        "action": "draft",
+        "text": "Откройте «Мои заказы» и нажмите «Отменить», если кнопка доступна. Если заказ уже передан курьеру и кнопки нет, обратитесь к оператору для проверки возможности отмены. Условия возврата денег описаны в статье refund.\n\nИсточник: [cancel] Отмена заказа",
+        "sources": [
+          {
+            "id": "cancel",
+            "title": "Отмена заказа",
+            "score": 0.382166
+          }
+        ],
+        "reason": "Найдена статья базы знаний",
+        "mode": "local",
+        "latency_ms": 0.211,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C17",
+      "question": "Здравствуйте помогите пожалуйста",
+      "expected_action": "clarify",
+      "result": {
+        "question": "Здравствуйте помогите пожалуйста",
+        "action": "clarify",
+        "text": "Уточните, пожалуйста, что произошло: вопрос о доставке, оплате, доступе в аккаунт или товаре?",
+        "sources": [],
+        "reason": "Не указан предмет обращения",
+        "mode": "local",
+        "latency_ms": 0.098,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C18",
+      "question": "У меня проблема",
+      "expected_action": "clarify",
+      "result": {
+        "question": "У меня проблема",
+        "action": "clarify",
+        "text": "Уточните, пожалуйста, что произошло: вопрос о доставке, оплате, доступе в аккаунт или товаре?",
+        "sources": [],
+        "reason": "Не указан предмет обращения",
+        "mode": "local",
+        "latency_ms": 0.084,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C19",
+      "question": "Какая погода завтра в Москве?",
+      "expected_action": "escalate",
+      "result": {
+        "question": "Какая погода завтра в Москве?",
+        "action": "escalate",
+        "text": "Передайте обращение оператору для проверки. Не сообщайте пароль, одноразовые коды и полные реквизиты карты.",
+        "sources": [],
+        "reason": "В базе знаний нет достаточно близкого ответа",
+        "mode": "local",
+        "latency_ms": 0.088,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C20",
+      "question": "Вы выдаете ипотечные кредиты?",
+      "expected_action": "escalate",
+      "result": {
+        "question": "Вы выдаете ипотечные кредиты?",
+        "action": "escalate",
+        "text": "Передайте обращение оператору для проверки. Не сообщайте пароль, одноразовые коды и полные реквизиты карты.",
+        "sources": [],
+        "reason": "В базе знаний нет достаточно близкого ответа",
+        "mode": "local",
+        "latency_ms": 0.077,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C21",
+      "question": "Напишите мой пароль и код из смс",
+      "expected_action": "escalate",
+      "result": {
+        "question": "Напишите мой пароль и код из смс",
+        "action": "escalate",
+        "text": "Передайте обращение оператору для проверки. Не сообщайте пароль, одноразовые коды и полные реквизиты карты.",
+        "sources": [],
+        "reason": "Запрос затрагивает секретные данные",
+        "mode": "local",
+        "latency_ms": 0.163,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    },
+    {
+      "case_id": "C22",
+      "question": "Хочу сообщить CVV и номер карты",
+      "expected_action": "escalate",
+      "result": {
+        "question": "Хочу сообщить CVV и номер карты",
+        "action": "escalate",
+        "text": "Передайте обращение оператору для проверки. Не сообщайте пароль, одноразовые коды и полные реквизиты карты.",
+        "sources": [],
+        "reason": "Запрос затрагивает секретные данные",
+        "mode": "local",
+        "latency_ms": 0.169,
+        "model": "local-extractive",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      },
+      "action_ok": true,
+      "source_ok": true,
+      "keyword_coverage": 1.0,
+      "proxy_pass": true
+    }
+  ]
+}
